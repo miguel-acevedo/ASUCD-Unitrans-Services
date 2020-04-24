@@ -1,0 +1,107 @@
+{{- $section2 := .Site.Params.section2 }}
+{{- $title    := index $section2 "title" }}
+{{- $title2    := index $section2 "title2" }}
+{{- $subtitle := index $section2 "subtitle" }}
+{{- $rightCol := index $section2 "rightCol" }}
+{{- $leftCol := index $section2 "leftCol" }}
+{{- $rightBullets := index $section2 "rightCol.bullets" }}
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+        <h2 class="title border is-3">{{ $title }}</h2>
+        <h3 class="subtitle is-5">{{ $subtitle }}</h3>
+        <h2 class="title border is-4">{{ $title2 }}</h2>
+      </div>
+    <div class="columns">
+      <div class="column is-6">
+        {{- range $leftCol }}
+        <article class="media icon-box">
+            <!---
+          <figure class="media-left">
+            <p class="image">
+              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </p>
+          </figure>
+        -->
+          <div class="media-content">
+            <div class="content">
+                {{ if .title }}
+                    <p>
+                        <span class="icon-box-title">{{ .title }}</span>
+        
+                        <span class="icon-box-text">{{ .text | markdownify }}</span>
+
+                        <ul>
+                        {{- range .bullets }}
+                        <li>
+                            <span class="icon-box-text">{{ .text | markdownify }}</span>
+                            </li>
+                        {{- end }}
+                        </ul>
+                    </p>
+                {{ else if .tableImage }}
+                <div class="table-image">
+                    <img src="{{ .tableImage | relURL }}">
+                </div>
+                {{ else if .heading }}
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title border is-4">fff</h2>
+                </div>
+                {{ else }}
+                    <div class="media-image">
+                        <img src="{{ .image | relURL }}">
+                    </div>
+                {{ end }}
+            </div>
+          </div>
+        </article>
+        {{- end }}
+      </div>
+      <div class="column is-6">
+        {{- range $rightCol }}
+        <article class="media icon-box">
+            <!---
+          <figure class="media-left">
+            <p class="image">
+              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </p>
+          </figure>
+        -->
+          <div class="media-content">
+            <div class="content">
+                {{ if .title }}
+                    <p>
+                        <span class="icon-box-title">{{ .title }}</span>
+        
+                        <span class="icon-box-text">{{ .text | markdownify }}</span>
+
+                        <ul>
+                        {{- range .bullets }}
+                        <li>
+                            <span class="icon-box-text">{{ .text | markdownify }}</span>
+                            </li>
+                        {{- end }}
+                        </ul>
+                    </p>
+                {{ else if .tableImage }}
+                <div class="table-image">
+                    <img src="{{ .tableImage | relURL }}">
+                </div>
+                {{ else if .heading }}
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title border is-4">{{ .heading }}</h2>
+                </div>
+                {{ else }}
+                    <div class="media-image">
+                        <img src="{{ .image | relURL }}">
+                    </div>
+                {{ end }}
+            </div>
+          </div>
+        </article>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

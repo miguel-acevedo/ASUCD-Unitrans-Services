@@ -81,19 +81,41 @@ params:
       url: /
       buttonText: Get started
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
-    features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    title: UNITRANS 2020-2021 SERVICE CHANGE PROPOSALS
+    title2: RELIABILITY IMPROVEMENTS
+    subtitle: Unitrans is proposing the following changes to bus service to take effect in August 3, 2020 for the 2020-21 academic year. Proposals focus on improving your ride by making it faster and more reliable. For more information on each proposal, go to unitrans.ucdavis.edu. To comment, email comments@unitrans.ucdavis.edu, call 530-752-2877, or mail Unitrans, 1 Shields Avenue, 5 South Hall, Davis, CA 95616. The comment period will close on Friday, May 22, 2020.
+    leftCol:
+    - title: All Door Boarding Pilot
+      bullets:
+        - text: Customers with passes will be allowed to board through any door to decrease boarding times. Only cash payers and 10-ride ticket holders will be required to board through the front doors. We trust our valued customers to continue to pay for their trips. As a reminder, Unitrans already entrusts customers at the Silo and Memorial Union Bus Terminals to pay their fare. Unitrans is not free at terminals. Pilot will last for up to a year.  
+    - title: Morning Schedule Update on All Lines
+      bullets:
+        - text: All morning schedules will shift five minutes earlier between 6:30 AM and 9:00 AM to provide extra time for 9:00 AM arrivals. No changes to campus departures after 9:00 AM.
+        - text: "Sample: P Line Departures from the Memorial Union Terminal"
+    - tableImage: img/table.png
+    - image: img/clock1.png
+    - title: "Drop Off Only Stop Pilot on the G, J, and V Lines:"
+      bullets:
+        - text: To improve travel times, Unitrans proposes drop off only stops at outbound (away from campus) bus stops on Alvarado Avenue and Sycamore Lane for the G/J lines and on Hutchison Drive at Sage Street and Sage Street at West Village Square on the V line. Customers will not be allowed to board at drop off only stops.
+    - image: img/drop_off.png
+    rightCol:
+    - image: img/bus_image.png
+    - title: Afternoon Schedule Update on V Line
+      bullets:
+        - text: Unitrans proposes adjusting the 25 minute after the hour afternoon and evening Silo Terminal V Line departures to 20 minutes after the hour to better meet customer demand.
+    - image: img/clock2.png
+    - heading: CAPACITY FOCUSED IMPROVEMENTS
       # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+    - title: "Unitrans proposes:"
+      bullets:
+        - text: Increased weekday morning capacity trips on the A and V lines
+        - text: New 7:10 PM Z line and 8:10 PM K and Z line trips
+        - text: Elimination of 6:20 PM D, G, J, and W lines and 6:25 PM V line trips. Buses will be used on overcrowded and late 6:35 PM trips
+    - image: img/bus_symbols.png
+    - heading: REMINDER FROM 2019
+    - title: A/O/Z Line Westbound Reroute Near the Davis Amtrak Station
+      bullets:
+        - text: As approved in April 2019, Unitrans will implement the approved A/O/Z line westbound reroute near the Davis Amtrak Station if safety incidents increase.
   section3:
     title: One platform
     subtitle: To rule them all

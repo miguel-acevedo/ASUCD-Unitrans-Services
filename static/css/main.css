@@ -1,0 +1,62 @@
+/* Unitrans Custom CSS */
+
+.section {
+    background: url(https://unitrans.ucdavis.edu/media/banner.jpg);
+    background-size: cover;
+}
+
+.container {
+    padding-top: 25px;
+    background-color: #ffffffe6;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 1088px) {
+.container {
+    max-width: 1100px;
+    width: 1100px;
+}
+}
+
+.media-image { 
+    margin: auto;
+    width: 50%;
+}
+
+.table-image { 
+    margin: auto;
+    width: 100%;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3rem;
+}
+
+.border {
+    border-style: solid;
+    color: #c12337 !important;
+    border-color: #c12337;
+}
+
+.icon-box-text {
+    color: black !important;
+}
+
+.icon-box-title {
+    color: black !important;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
