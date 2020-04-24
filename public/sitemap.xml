@@ -3,7 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://something-fresh.org/posts/my-first-post/</loc>
+    <lastmod>2020-04-24T12:52:42-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://something-fresh.org/posts/</loc>
+    <lastmod>2020-04-24T12:52:42-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://something-fresh.org/</loc>
+    <lastmod>2020-04-24T12:52:42-07:00</lastmod>
   </url>
   
 </urlset>
