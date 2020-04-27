@@ -5,11 +5,12 @@
     background-size: cover;
 }
 
-.container {
+.container.body {
     padding-top: 25px;
     background-color: #ffffffe6;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 15px;
 }
 
 @media screen and (min-width: 1088px) {
@@ -17,6 +18,16 @@
     max-width: 1100px;
     width: 1100px;
 }
+.header-body {
+    margin-right: -30% !important;
+    margin-left: -30% !important;
+}
+.header-title {
+    margin-right: -30% !important;
+    margin-left: -30% !important;
+    font-size: 1.4rem;
+}
+
 }
 
 .media-image { 
@@ -59,4 +70,21 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+.footer-logo {
+    margin: auto;
+    width: 30%;
+}
+
+.navbar.is-fresh .navbar-item.is-secondary:hover {
+    color: #bc000f !important;
+}
+
+#backtotop.visible a:hover {
+    background: #bc000f;
+}
+
+a {
+    color: #bc000f;
 }

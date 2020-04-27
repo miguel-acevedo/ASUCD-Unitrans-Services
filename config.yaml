@@ -1,4 +1,5 @@
-baseURL: http://something-fresh.org/
+baseURL: https://unitrans.ucdavis.edu/proposed-changes/
+relativeURLs: true
 languageCode: en-us
 title: Unitrans Service Changes
 theme: hugo-fresh
@@ -16,11 +17,11 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy 
-  description: 
+  description: Unitrans Service Changes. View what services changes will occur.
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
-    link: /
+    image: unitrans.png
+    link: https://unitrans.ucdavis.edu/
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -44,42 +45,12 @@ params:
     - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
-    url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
-    sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
-    button: true
-  section1:
-    title: Great power comes
-    subtitle: with great responsibility
-    tiles:
-    - title: App builder
-      icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
-      icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+  - title: Return to Unitrans
+    url: https://unitrans.ucdavis.edu/
+  - title: En español
+    url: pdf/Unitrans-Service-Changes-Spanish.pdf
+  - title: 用中文
+    url: pdf/Unitrans-Service-Changes-Chinese.pdf
   section2:
     title: UNITRANS 2020-2021 SERVICE CHANGE PROPOSALS
     title2: RELIABILITY IMPROVEMENTS
@@ -91,72 +62,33 @@ params:
     - title: Morning Schedule Update on All Lines
       bullets:
         - text: All morning schedules will shift five minutes earlier between 6:30 AM and 9:00 AM to provide extra time for 9:00 AM arrivals. No changes to campus departures after 9:00 AM.
-        - text: "Sample: P Line Departures from the Memorial Union Terminal"
-    - tableImage: img/table.png
-    - image: img/clock1.png
+        - text: "<a target='_blank' href='pdf/SampleMorningSchedules.pdf'>Click here for sample schedules</a>"
+    - image: clock1.png
     - title: "Drop Off Only Stop Pilot on the G, J, and V Lines:"
       bullets:
         - text: To improve travel times, Unitrans proposes drop off only stops at outbound (away from campus) bus stops on Alvarado Avenue and Sycamore Lane for the G/J lines and on Hutchison Drive at Sage Street and Sage Street at West Village Square on the V line. Customers will not be allowed to board at drop off only stops.
-    - image: img/drop_off.png
+        - text: "<a target='_blank' href='https://drive.google.com/open?id=1uarU6Bn1pD4BbLA1DtgX2FcCnsd5youU&usp=sharing'>Click here for G/J Line Impacted Stops</a>"
+        - text: "<a target='_blank' href='https://drive.google.com/open?id=1sfdcRAp54x05em1Q-Lz5ugM35cVtT2Sa&usp=sharing'>Click here for V Line Impacted Stops</a>"
+    - image: drop_off.png
     rightCol:
-    - image: img/bus_image.png
+    - image: bus_image.png
     - title: Afternoon Schedule Update on V Line
       bullets:
         - text: Unitrans proposes adjusting the 25 minute after the hour afternoon and evening Silo Terminal V Line departures to 20 minutes after the hour to better meet customer demand.
-    - image: img/clock2.png
+        - text: "<a target='_blank' href='pdf/V_Line_Sample.pdf'>Click here for sample schedules</a>"
+    - image: clock2.png
     - heading: CAPACITY FOCUSED IMPROVEMENTS
       # Icon (from /images/illustrations/icons/___.svg)
     - title: "Unitrans proposes:"
       bullets:
-        - text: Increased weekday morning capacity trips on the A and V lines
+        - text: Increased weekday morning capacity trips on the A and V lines.
         - text: New 7:10 PM Z line and 8:10 PM K and Z line trips
         - text: Elimination of 6:20 PM D, G, J, and W lines and 6:25 PM V line trips. Buses will be used on overcrowded and late 6:35 PM trips
-    - image: img/bus_symbols.png
+    - image: bus_symbols.png
     - heading: REMINDER FROM 2019
     - title: A/O/Z Line Westbound Reroute Near the Davis Amtrak Station
       bullets:
         - text: As approved in April 2019, Unitrans will implement the approved A/O/Z line westbound reroute near the Davis Amtrak Station if safety incidents increase.
-  section3:
-    title: One platform
-    subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: "#"
-  section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-    clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
-  section5: true
-  footer:
-    # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
-    # Social Media Title
-    socialmediatitle: Follow Us
-    # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/lucperkins
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:

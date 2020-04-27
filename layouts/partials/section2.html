@@ -7,10 +7,11 @@
 {{- $rightBullets := index $section2 "rightCol.bullets" }}
 
 <section class="section is-medium">
-  <div class="container">
+  <div class="container body">
     <div class="title-wrapper has-text-centered">
-        <h2 class="title border is-3">{{ $title }}</h2>
-        <h3 class="subtitle is-5">{{ $subtitle }}</h3>
+        <h2 class="title border is-3 header-title">{{ $title }}</h2>
+        <h3 class="subtitle is-5 header-body">{{ $subtitle }}</h3>
+        <br>
         <h2 class="title border is-4">{{ $title2 }}</h2>
       </div>
     <div class="columns">
@@ -42,7 +43,7 @@
                     </p>
                 {{ else if .tableImage }}
                 <div class="table-image">
-                    <img src="{{ .tableImage | relURL }}">
+                    <img src="{{ printf "/images/%s" .tableImage | relURL }}">
                 </div>
                 {{ else if .heading }}
                 <div class="title-wrapper has-text-centered">
@@ -50,7 +51,7 @@
                 </div>
                 {{ else }}
                     <div class="media-image">
-                        <img src="{{ .image | relURL }}">
+                        <img src="{{ printf "/images/%s" .image | relURL }}">
                     </div>
                 {{ end }}
             </div>
@@ -86,7 +87,7 @@
                     </p>
                 {{ else if .tableImage }}
                 <div class="table-image">
-                    <img src="{{ .tableImage | relURL }}">
+                    <img src="{{ printf "/images/%s" .tableImage | relURL }}">
                 </div>
                 {{ else if .heading }}
                 <div class="title-wrapper has-text-centered">
@@ -94,7 +95,7 @@
                 </div>
                 {{ else }}
                     <div class="media-image">
-                        <img src="{{ .image | relURL }}">
+                        <img src="{{ printf "/images/%s" .image | relURL }}">
                     </div>
                 {{ end }}
             </div>
@@ -102,6 +103,9 @@
         </article>
         {{- end }}
       </div>
+    </div>
+    <div class="footer-logo">
+        <img src="/images/unitrans.png">
     </div>
   </div>
 </section>
